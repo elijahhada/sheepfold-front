@@ -1,0 +1,11 @@
+{
+    "http://laravel.test/*": {
+        "target": "http://laravel.test",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": true,
+        "pathRewrite": {
+            "^/laravel.test": ""
+        }
+    }
+}

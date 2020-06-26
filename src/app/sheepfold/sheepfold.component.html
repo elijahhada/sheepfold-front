@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="d-flex align-items-center justify-content-center">
+        <p class="m-0"><span class="text-gray">День: {{days}}  Время: {{seconds}}</span></p>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="select1">Загон 1</label>
+          <select multiple class="form-control" id="select1" size="8">
+            <option *ngFor="let sheep of sheepfold1">{{sheep.title}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="select2">Загон 2</label>
+          <select multiple class="form-control" id="select2" size="8">
+            <option *ngFor="let sheep of sheepfold2">{{sheep.title}}</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="select1">Загон 3</label>
+          <select multiple class="form-control" id="select1" size="8">
+            <option *ngFor="let sheep of sheepfold3">{{sheep.title}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="select2">Загон 4</label>
+          <select multiple class="form-control" id="select2" size="8">
+            <option *ngFor="let sheep of sheepfold4">{{sheep.title}}</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
